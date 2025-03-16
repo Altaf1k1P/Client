@@ -9,11 +9,11 @@
     width: 50%;
 }
 
-.slick-dots{
+.product-image-section .slick-dots{
     bottom: 0;
 }
 
-.slick-dots li {
+.product-image-section .slick-dots li {
     width: 15%;
     height: unset;
     border: 1px solid #dfdfdf;
@@ -21,30 +21,30 @@
     overflow: hidden;
 }
 
-li.slick-active {
+.product-image-section li.slick-active {
     border: 2px solid #83bc2e;
 }
 
-button.slick-arrow.slick-prev{
+.product-image-section button.slick-arrow.slick-prev{
     background-color: green;
     border-radius: 50%;
     z-index: 1;
     left: 0;
 }
 
-button.slick-arrow.slick-next{
+.product-image-section button.slick-arrow.slick-next{
     background-color: green;
     border-radius: 50%;
     z-index: 1;
     right: 0;
 }
 
-.slick-prev, .slick-next{
+.product-image-section .slick-prev, .slick-next{
     width: 40px;
     height: 40px;
 }
 
-.slick-prev:before, .slick-next:before{
+.product-image-section .slick-prev:before, .product-image-section .slick-next:before{
     font-size: 36px;
 }
 
