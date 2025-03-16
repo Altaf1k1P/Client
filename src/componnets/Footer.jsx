@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
       {/* <!-- Remove the container if you want to extend the Footer to full width. --> */}
-      <div className="container my-5">
+      <div>
         {/* <!-- Footer --> */}
         <footer className="footer text-white" style={{ backgroundColor: "#1d1d1d" }}>
 

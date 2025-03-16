@@ -1,0 +1,142 @@
+/* Shop hader section  */
+
+.shop-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #dddddd;
+}
+
+h1.shop-title {
+    font-weight: 700;
+}
+
+ul.breadcurm {
+    display: flex;
+    padding-left: 0;
+}
+
+li.breadcurm-item {
+    list-style: none;
+}
+
+li.breadcurm-item::after {
+    font-family: "Font Awesome 6 Free"; /* Ensure you use the correct version */
+    content: "\f105"; /* Unicode for Font Awesome 'angle-right' icon */
+    font-weight: 900; /* Required for solid icons */
+    font-size: 13px;
+    color: gray; 
+    padding: 0 10px;
+}
+
+li.breadcurm-item:last-child::after {
+    content: ""; /* Removes ">" from the last item */
+    padding: 0;
+}
+
+li.breadcurm-item.active {
+    color: #83bc2e;
+}
+
+/* shop header section end  */
+
+
+
+/* shop item card  */
+
+.hover-icon {
+    padding: 10px;
+    border: 1px solid #adabab;
+    border-radius: 50%;
+}
+
+.shop-items-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.shop-item {
+    width: 20%;
+    border: 1px solid #adabab;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.shop-item-description{
+    text-align: center;
+}
+
+.shop-item-image {
+    position: relative;
+    overflow: hidden; /* Prevents overflow */
+    display: inline-block; /* Keeps structure */
+}
+
+.shop-item-image img {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+/* Hidden by default */
+.shop-hover-item {
+    position: absolute;
+    top: 110px;
+    right: -2px;
+     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.shop-hover-item .hover-icon {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.shop-hover-item .hover-icon:hover {
+    background: #83bc2e; /* Change color on hover */
+    color: #fff;
+}
+
+/* Hover Effects */
+.shop-item-image:hover .shop-hover-item {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+}
+
+.shop-item-image:hover img {
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+p.product-price {
+    color: #5fc76d;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p.product-type {
+    color: #a99f9f;
+    font-weight: 600;
+}
+
+p.product-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* shop item card end */

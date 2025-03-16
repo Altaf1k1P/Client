@@ -25,8 +25,8 @@ function Header() {
               <Link className="nav-link active" to="/">Home</Link>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" to="/home" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Home
+              <Link className="nav-link dropdown-toggle" to="/shop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
               </Link>
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item" to="#">Action</Link></li>
