@@ -2,14 +2,17 @@ import { useState } from 'react'
 import Header from './componnets/Header'
 import { Outlet } from 'react-router-dom'
 import Footer from './componnets/Footer'
+import "./App.css"
 
 function App() {
 
   return (
     <>
      <Header/>
-     <Outlet/>
-     <Footer/>
+     <main>
+        <Outlet />
+      </main>     
+      <Footer/>
     </>
   )
 }
