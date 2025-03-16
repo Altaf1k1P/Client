@@ -44,5 +44,8 @@ button.slick-arrow.slick-next{
     height: 40px;
 }
 
+.slick-prev:before, .slick-next:before{
+    font-size: 36px;
+}
 
  /* main breadcurm section  */
