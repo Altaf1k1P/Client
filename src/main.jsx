@@ -8,6 +8,7 @@ import { createBrowserRouter,
   import Home from './pages/Home.jsx'
   import contact from './pages/contact.jsx'
   import Shop from './pages/Shop.jsx'
+  import SingleProduct from './pages/SingleProduct.jsx'
 
   const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ import { createBrowserRouter,
         {
           path: '/shop',
           element: <Shop/>
+        },
+        {
+          path: '/product/:productId',
+          element: <SingleProduct />
         }
       ],
     }

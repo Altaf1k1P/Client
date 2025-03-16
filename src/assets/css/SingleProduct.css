@@ -1,0 +1,48 @@
+ /* main breadcurm section  */
+
+.breadcurm-section{
+    background-color: #dddddd;
+    padding: 3% 5%;
+}
+
+.product-image-section{
+    width: 50%;
+}
+
+.slick-dots{
+    bottom: 0;
+}
+
+.slick-dots li {
+    width: 15%;
+    height: unset;
+    border: 1px solid #dfdfdf;
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+li.slick-active {
+    border: 2px solid #83bc2e;
+}
+
+button.slick-arrow.slick-prev{
+    background-color: green;
+    border-radius: 50%;
+    z-index: 1;
+    left: 0;
+}
+
+button.slick-arrow.slick-next{
+    background-color: green;
+    border-radius: 50%;
+    z-index: 1;
+    right: 0;
+}
+
+.slick-prev, .slick-next{
+    width: 40px;
+    height: 40px;
+}
+
+
+ /* main breadcurm section  */

@@ -1,11 +1,21 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 import "../assets/css/StyleShop.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass , faHeart , faArrowsRotate , faBagShopping } from "@fortawesome/free-solid-svg-icons"; 
 
 
 function Shop() {
+
+    const navigate = useNavigate()
+
+
+    const handleSingleProductDetailsRedirection = (productId) => {
+
+        navigate(`/product/${productId}`)
+    }
+
     return (
         <>
             <div className='shop-main'>
@@ -27,7 +37,8 @@ function Shop() {
                         </div>
                     </div>
                     <div className='shop-item-description'>
-                        <p className='product-name'>Fresh Mango 1Kg</p>
+                        <p className='product-name' style={ { cursor: "pointer" } } onClick={ () => handleSingleProductDetailsRedirection(100) }>
+                        Fresh Mango 1Kg</p>
                         <p className='product-type'>Shop</p>
                         <p className='product-price'>$10.00-$35.00</p>
                     </div>
