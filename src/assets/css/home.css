@@ -1,0 +1,51 @@
+.home-banner{
+    margin: 5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    gap: 1.5rem;
+}
+
+.home-banner .container {
+    background-image: url('../wp.images/img-banner1-2-300x180.jpg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensures child elements behave correctly */
+    overflow: hidden; /* Prevents image overflow */
+}
+
+/* Adding the pseudo-element for the zoom effect */
+.home-banner .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Inherits the same background */
+    background-size: 100%; /* Start with the default size */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Apply zoom effect on hover */
+.home-banner .container:hover::before {
+    transform: scale(1.2); /* Zoom in the background */
+}
+
+.layout2_header{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
