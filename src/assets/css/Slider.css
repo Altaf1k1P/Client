@@ -1,0 +1,25 @@
+.bg{
+    background-image: url('../wp.images/slider1-1.jpg.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+}
+
+/* Make sure the dots are visible */
+.slick-dots {
+    bottom: 20px; /* Adjust this value as needed */
+    /* padding-bottom: 40px; Push dots into view */
+}
+
+.slick-dots li button:before {
+    font-size: 12px; /* Adjust dot size */
+    color: #ffff; /* Change to visible color */
+
+}
+
+.slick-dots li.slick-active button:before {
+    color: red; /* Change to highlight color */
+}
