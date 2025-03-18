@@ -40,6 +40,10 @@
 .home-banner .container:hover::before {
     transform: scale(1.2); /* Zoom in the background */
 }
+/* start layout2 / category*/
+.layout2{
+    padding: 1.8rem;
+}
 
 .layout2_header{
 display: flex;
@@ -48,4 +52,29 @@ justify-content: center;
 align-items: center;
 
 }
+
+.category-item-inner{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative; /* Ensures child elements behave correctly */
+}
+
+.category-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 20%;
+    overflow: hidden;
+}
+
+.category-item .category-contant{
+    padding-top: 1.3rem;
+}
+
+/* end layout2 / category*/
 
