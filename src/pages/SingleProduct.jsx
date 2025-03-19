@@ -4,6 +4,8 @@ import "../assets/css/SingleProduct.css"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons"; 
 
 
 
@@ -67,7 +69,15 @@ const SingleProduct = () => {
                     </div>
                 </div>
                 <div className="product-details-section">
-
+                    <h1>Fresh Orange 1Kg</h1>
+                    <div className="product-rating">
+                        <FontAwesomeIcon icon={ faStar } />
+                        <FontAwesomeIcon icon={ faStar } />
+                        <FontAwesomeIcon icon={ faStar } />
+                        <FontAwesomeIcon icon={ faStar } />
+                        <FontAwesomeIcon icon={ faStar } />
+                        
+                    </div>
                 </div>
             </div>
         </>
