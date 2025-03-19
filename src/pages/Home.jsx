@@ -1,29 +1,114 @@
 import React from 'react'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import SlideComp from '../componnets/Slider';
+import cate1 from "../assets/wp.images/img-cate1.png";
+import '../assets/css/home.css'
 function Home() {
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-  };
+
 
 
 
   return (
     <div>
-      <h1>React Slick Carousel</h1>
-      <Slider {...settings}>
-        <div><h3>Slide 1</h3></div>
-        <div><h3>Slide 2</h3></div>
-        <div><h3>Slide 3</h3></div>
-      </Slider>
+      <SlideComp />
+      <div className='home-banner layout1'>
+
+        <div className='container'>
+          {/* add contant */}
+        </div>
+
+        <div className='container'>
+          {/* add contant */}
+
+        </div>
+
+        <div className='container'>
+          {/* add contant */}
+
+        </div>
+
+
+      </div>
+      <div className='layout2'>
+        <div className='layout2_header'>
+          <p>Shop By Categories</p>
+          <h1>
+            <span>Featured Categories</span>
+          </h1>
+        </div>
+        <div className='category-item-inner'>
+
+          <div className='category-item'>
+            <a href="">
+              <img src={`${cate1}`} alt="" className='category-img' />
+            </a>
+            <div className='category-contant'>
+              <a href="">
+                fruits
+              </a>
+            </div>
+          </div>
+
+          <div className='category-item'>
+            <a href="">
+            <img src={`${cate1}`} alt="" className='category-img' />
+            </a>
+            <div className='category-contant'>
+              <a href="">
+              fruits
+              </a>
+            </div>
+          </div>
+
+          <div className='category-item'>
+            <a href="">
+            <img src={`${cate1}`} alt="" className='category-img' />
+            </a>
+            <div className='category-contant'>
+              <a href="">
+              fruits
+              </a>
+            </div>
+          </div>
+
+          <div className='category-item'>
+            <a href="">
+            <img src={`${cate1}`} alt="" className='category-img' />
+            </a>
+            <div className='category-contant'>
+              <a href="">
+              fruits
+              </a>
+            </div>
+          </div>
+
+          <div className='category-item'>
+            <a href="">
+            <img src={`${cate1}`} alt="" className='category-img' />
+            </a>
+            <div className='category-contant'>
+              <a href="">
+              fruits
+              </a>
+            </div>
+          </div>
+
+          <div className='category-item'>
+            <a href="">
+            <img src={`${cate1}`} alt="" className='category-img' />
+            </a>
+            <div className='category-contant'>
+              <a href="">
+              fruits
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="layout2_footer">
+          
+        </div>
+      </div>
     </div>
   )
 }
