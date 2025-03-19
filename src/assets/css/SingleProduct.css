@@ -5,8 +5,19 @@
     padding: 3% 5%;
 }
 
-.product-image-section{
-    width: 50%;
+ /* main breadcurm section  */
+
+
+ /* product detail section  */
+
+ .product-section {
+    display: flex;
+    padding: 2% 7%;
+    gap: 100px;
+}
+
+ .product-image-section{
+    width: 40%;
 }
 
 .product-image-section .slick-dots{
@@ -39,7 +50,7 @@
     right: 0;
 }
 
-.product-image-section .slick-prev, .slick-next{
+.product-image-section .slick-prev, .product-image-section .slick-next{
     width: 40px;
     height: 40px;
 }
@@ -48,4 +59,120 @@
     font-size: 36px;
 }
 
- /* main breadcurm section  */
+.review-star{
+    color: gold;
+}
+
+.product-quantity {
+    display: flex;
+    gap: 20px;
+}
+
+.product-item-no {
+    border: 1px solid rgb(220, 220, 220);
+}
+
+.product-item-no span {
+    padding: 0px 14px;
+    font-size: 16px;
+}
+
+button.decrease, button.increase {
+    border: none;
+    border-radius: unset;
+    font-size: 18px;
+    background-color: unset;
+}
+
+button.decrease {
+    border-right: 1px solid rgb(220, 220, 220);
+}
+
+button.increase {
+    border-left: 1px solid rgb(220, 220, 220);
+}
+
+.product-add-to-cart button {
+    border: none;
+    text-transform: uppercase;
+    background-color: #83bc2e;
+    border-radius: 6px;
+    color: white;
+}
+
+.product-add-to-cart button:hover{
+    background-color: black;
+}
+
+/* product detail section end  */
+
+
+/* product tabs section  */
+
+.product-tabs{
+    padding: 2% 7%;
+}
+
+.nav.nav-tabs {
+    justify-content: center;
+}
+
+button.nav-link {
+    border: none !important;
+    background-color: unset !important;
+}
+
+/* review section  */
+
+.review-labels {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0;
+    gap: 5px;
+}
+
+form.review-form {
+    width: 50%;
+}
+
+button.review-submit-btn {
+    margin: auto;
+    display: block;
+    border: none;
+    background: forestgreen;
+    padding: 6px 30px;
+    border-radius: 4px;
+    color: white;
+    margin-top: 20px;
+}
+
+/* review section end  */
+
+/* product tabs section end */
+
+
+/* related product slider  */
+
+.product-slider .shop-item{
+    width: 100%;
+}
+
+.product-slider{
+    padding: 10px;
+}
+
+.related-products{
+    padding: 2% 10%;
+}
+
+.related-products .slick-list {
+    padding: 0 !important;
+}
+
+.related-products button.slick-arrow.slick-prev, .related-products button.slick-arrow.slick-next {
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+/* related product slider end */
