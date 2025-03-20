@@ -4,11 +4,12 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter,
-  RouterProvider} from 'react-router-dom'
-  import Home from './pages/Home.jsx'
-  import contact from './pages/contact.jsx'
-  import Shop from './pages/Shop.jsx'
-  import SingleProduct from './pages/SingleProduct.jsx'
+RouterProvider} from 'react-router-dom'
+import Home from './pages/Home.jsx'
+import contact from './pages/contact.jsx'
+import Shop from './pages/Shop.jsx'
+import SingleProduct from './pages/SingleProduct.jsx'
+import AboutUs from './pages/AboutUs.jsx'
 
   const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ import { createBrowserRouter,
         {
           path: '/product/:productId',
           element: <SingleProduct />
+        },
+        {
+          path: '/about-us',
+          element: <AboutUs />
         }
       ],
     }

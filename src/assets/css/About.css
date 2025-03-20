@@ -1,0 +1,60 @@
+/* counter box section  */
+
+
+.counter-boxs{
+    background: #7cb342;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 2% 7%;
+}
+
+.counter-box{
+    display: flex;
+    color: white;
+    padding: 20px 0;
+}
+
+.counter-icon{
+    font-size: 50px;
+    padding: 0 25px;
+}
+
+.counter-no{
+    font-size: 30px;
+}
+
+/* counter box section end */
+
+/* detail section  */
+
+.about-details {
+    margin: 7% 9% 2%;
+    text-align: center;
+}
+
+.about-details p{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.who-we-are {
+    margin: 5% auto;
+    width: 55%;
+}
+
+.who-we-are-box {
+    display: flex;
+}
+
+.who-we-are-box h3{
+    width: 20%;
+}
+
+.who-we-are-box p{
+    width: 70%;
+}
+
+
+/* detail section end */
