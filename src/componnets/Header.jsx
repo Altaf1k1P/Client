@@ -36,7 +36,7 @@ function Header() {
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" to="/contact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link dropdown-toggle" to="/contact-us" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Contact
               </Link>
               <ul className="dropdown-menu">

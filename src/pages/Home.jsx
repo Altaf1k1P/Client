@@ -323,6 +323,7 @@ function Home() {
                         </div>
         </div>
         {/* shop end */}
+
       </div>
 
 
