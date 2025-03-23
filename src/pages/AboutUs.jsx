@@ -49,7 +49,7 @@ function AboutUs() {
                 <div className='counter-box' key={index}>
                 <div className='counter-icon'>{stat.icon}</div>
                 <div className="counter-text">
-                    <CountUp start={0} end={stat.value} duration={10} delay={0} className='counter-no' />
+                    <CountUp start={0} end={stat.value} duration={30} delay={0} className='counter-no' />
                     <p>{stat.label}</p>
                 </div>
                 </div>
