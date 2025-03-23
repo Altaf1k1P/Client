@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter,
   RouterProvider} from 'react-router-dom'
   import Home from './pages/Home.jsx'
-  import Contact from './pages/contact.jsx'
+  import contact from './pages/contact.jsx'
   import Shop from './pages/Shop.jsx'
   import SingleProduct from './pages/SingleProduct.jsx'
 
@@ -32,7 +32,7 @@ import { createBrowserRouter,
         {
           path: '/product/:productId',
           element: <SingleProduct />
-        },
+        }
       ],
     }
   ])
