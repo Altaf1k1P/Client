@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom'
 import Footer from './componnets/Footer'
 import "./App.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Test from './componnets/test'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Outlet />
       </main>     
       <Footer/>
+      {/* <Test/> */}
     </>
   )
 }

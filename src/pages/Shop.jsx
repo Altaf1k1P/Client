@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import "../assets/css/StyleShop.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass , faHeart , faArrowsRotate , faBagShopping } from "@fortawesome/free-solid-svg-icons"; 
+import ProductListing from '../componnets/ProductListing';
 
 
 function Shop() {
@@ -26,7 +27,7 @@ function Shop() {
                 </ul>
             </div>
             <div className='shop-items-flex'> 
-                <div className='shop-item'>
+                 <div className='shop-item'>
                     <div className='shop-item-image'>
                         <img src="https://wp-react-store.aayurfarms.com/wp-content/uploads/2025/03/5-600x600.jpg.jpeg" alt="" />
                         <div className='shop-hover-item'>
@@ -90,7 +91,10 @@ function Shop() {
                         <p className='product-type'>Shop</p>
                         <p className='product-price'>$10.00-$35.00</p>
                     </div>
-                </div>
+                
+                </div> 
+                
+                <ProductListing/>
             </div>
         </>
     )
