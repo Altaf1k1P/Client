@@ -24,6 +24,11 @@ function Header() {
             <li className="nav-item">
               <Link className="nav-link active" to="/">Home</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link dropdown-toggle" to="/blogs" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blogs
+              </Link>
+              </li>
             <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="/shop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Shop

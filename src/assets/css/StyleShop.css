@@ -58,6 +58,8 @@ li.breadcurm-item.active {
     justify-content: space-evenly;
     align-items: center;
     margin: 50px 0;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .shop-item {

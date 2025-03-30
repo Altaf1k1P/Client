@@ -5,6 +5,7 @@ import BgTitle from "../assets/wp.images/bg-title.png";
 import '../assets/css/home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTruckFast, faMagnifyingGlass , faHeart , faArrowsRotate , faBagShopping } from "@fortawesome/free-solid-svg-icons";
+import FeatureBlogs from '../componnets/FeatureBlogs.jsx';
 
 function Home() {
   return (
@@ -326,6 +327,7 @@ function Home() {
 
       </div>
 
+      <FeatureBlogs />
 
     </div>
   );
